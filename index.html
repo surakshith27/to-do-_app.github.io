@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form action="" id="todo-form">
+
+            <input type="text" name="task-name" placeholder="Item Name" id="todo-name" autofocus>
+
+            <input placeholder="Deadline" class="textbox-n" type="date" id="deadline">
+
+            <select id="priority" name="priority" aria-placeholder="Priority ">
+                <option value="high">high</option>
+                <option value="medium">medium </option>
+                <option value="low">low</option>
+              </select>
+
+              <button type="submit" class="submit">Add Item</button>
+
+        </form>
+    </div>
+
+    <div class="todo">
+        <h2>Today To-DO List</h2>
+        <ol class="to-do">
+            <!--<div class="list-item">
+                <li>
+                    <div class="taskData">
+                        <span id="name"> Task 1</span>
+                        <span id="day">deadline</span>
+                        <span id="imp">priority</span>
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"> <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" fill="white"></path> <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" fill="white"></path> </svg>
+                        </button>
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17 6V5C17 3.89543 16.1046 3 15 3H9C7.89543 3 7 3.89543 7 5V6H4C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8H5V19C5 20.6569 6.34315 22 8 22H16C17.6569 22 19 20.6569 19 19V8H20C20.5523 8 21 7.55228 21 7C21 6.44772 20.5523 6 20 6H17ZM15 5H9V6H15V5ZM17 8H7V19C7 19.5523 7.44772 20 8 20H16C16.5523 20 17 19.5523 17 19V8Z" fill="white"></path> </svg>
+                        </button>
+                    </div>
+                </li>
+            </div>
+            <div class="list-item">
+                <li>
+                    <div class="taskData">
+                        <span id="name"> Task 1</span>
+                        <span id="day">deadline</span>
+                        <span id="imp">priority</span>
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"> <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" fill="white"></path> <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" fill="white"></path> </svg>
+                        </button>
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17 6V5C17 3.89543 16.1046 3 15 3H9C7.89543 3 7 3.89543 7 5V6H4C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8H5V19C5 20.6569 6.34315 22 8 22H16C17.6569 22 19 20.6569 19 19V8H20C20.5523 8 21 7.55228 21 7C21 6.44772 20.5523 6 20 6H17ZM15 5H9V6H15V5ZM17 8H7V19C7 19.5523 7.44772 20 8 20H16C16.5523 20 17 19.5523 17 19V8Z" fill="white"></path> </svg>
+                        </button>
+                    </div>
+                </li>
+            </div>-->
+        </ol>
+    </div>
+
+    <div class="future-todo">
+        <h2>Future To-Do List</h2>
+        <ol class="to-do">
+            <!--<div class="list-item">
+                <li>
+                    <div class="taskData">
+                        <span id="name"> Task 1</span>
+                        <span id="day">deadline</span>
+                        <span id="imp">priority</span>
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: white" xmlns="http://www.w3.org/2000/svg"> width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"> <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" fill="white"></path> <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" fill="white"></path> </svg>
+                        </button>
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17 6V5C17 3.89543 16.1046 3 15 3H9C7.89543 3 7 3.89543 7 5V6H4C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8H5V19C5 20.6569 6.34315 22 8 22H16C17.6569 22 19 20.6569 19 19V8H20C20.5523 8 21 7.55228 21 7C21 6.44772 20.5523 6 20 6H17ZM15 5H9V6H15V5ZM17 8H7V19C7 19.5523 7.44772 20 8 20H16C16.5523 20 17 19.5523 17 19V8Z" fill="white"></path> </svg>
+                        </button>
+                    </div>
+                </li>
+            </div>
+            <div class="list-item">
+                <li>
+                    <div class="taskData">
+                        <span id="name"> Task 1</span>
+                        <span id="day">deadline</span>
+                        <span id="imp">priority</span>
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: white" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2-circle" viewBox="0 0 16 16"> <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0z" fill="white"></path> <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l7-7z" fill="white"></path> </svg>
+                        </button>
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: white" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17 6V5C17 3.89543 16.1046 3 15 3H9C7.89543 3 7 3.89543 7 5V6H4C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8H5V19C5 20.6569 6.34315 22 8 22H16C17.6569 22 19 20.6569 19 19V8H20C20.5523 8 21 7.55228 21 7C21 6.44772 20.5523 6 20 6H17ZM15 5H9V6H15V5ZM17 8H7V19C7 19.5523 7.44772 20 8 20H16C16.5523 20 17 19.5523 17 19V8Z" fill="white"></path> </svg>
+                        </button>
+                    </div>
+                </li>
+            </div>-->
+        </ol>
+    </div>
+
+    <div class="completed-todo">
+        <h2>Completed To-Do List</h2>
+        <ol class="to-do">
+            <!--<div class="list-item-completed">
+                <li>
+                    <div class="taskData">
+                        <span id="name"> Task 1</span>
+                        <span id="day">deadline</span>
+                        <span id="imp">priority</span>
+                    
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: rgb(0, 0, 0)" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17 6V5C17 3.89543 16.1046 3 15 3H9C7.89543 3 7 3.89543 7 5V6H4C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8H5V19C5 20.6569 6.34315 22 8 22H16C17.6569 22 19 20.6569 19 19V8H20C20.5523 8 21 7.55228 21 7C21 6.44772 20.5523 6 20 6H17ZM15 5H9V6H15V5ZM17 8H7V19C7 19.5523 7.44772 20 8 20H16C16.5523 20 17 19.5523 17 19V8Z" fill="black"></path> </svg>
+                        </button>
+                    </div>
+                </li>
+            </div>-->
+            <!--<div class="list-item-completed">
+                <li>
+                    <div class="taskData">
+                        <span id="name"> Task 1</span>
+                        <span id="day">deadline</span>
+                        <span id="imp">priority</span>
+                        
+                        <button title="Remove task" class="remove-task">
+                            <svg style="color: rgb(0, 0, 0)" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M17 6V5C17 3.89543 16.1046 3 15 3H9C7.89543 3 7 3.89543 7 5V6H4C3.44772 6 3 6.44772 3 7C3 7.55228 3.44772 8 4 8H5V19C5 20.6569 6.34315 22 8 22H16C17.6569 22 19 20.6569 19 19V8H20C20.5523 8 21 7.55228 21 7C21 6.44772 20.5523 6 20 6H17ZM15 5H9V6H15V5ZM17 8H7V19C7 19.5523 7.44772 20 8 20H16C16.5523 20 17 19.5523 17 19V8Z" fill="black"></path> </svg>
+                        </button>
+                    </div>
+                </li>
+            </div> -->
+        </ol>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+</html>

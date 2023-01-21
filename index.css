@@ -1,0 +1,162 @@
+body{
+    font-family: 'Inter';
+}
+h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 77px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    color: #000000;
+}
+#todo-form{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 37px;
+    margin-right: 25px;
+    height: 63px;
+    margin-bottom: 48px;
+}
+#todo-name{
+    flex: 3 1 0;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    padding-left: 21px;
+    color: #000000;
+}
+#deadline{
+    margin-left: 14px;
+    margin-right: 18px;
+    flex: 2 1 0;
+    padding-left: 21px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #000000;    
+}
+#priority{
+    flex: 2 1 0;
+    padding-left: 16px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    
+    color: #000000;    
+}
+.submit{
+    margin-left: 12px;
+    flex: 1 1 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.todo{
+    padding: 0%;
+    margin: 0%;
+}
+h2{
+    width: 621px;
+    height: 45px;
+    left: 37px;
+    margin-top: 0;
+    margin-bottom: 29px;
+    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    margin-left: 37px;
+    
+    color: #000000;
+}
+.list-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    color: white;
+    height: 80px;
+    margin-bottom: 29px;
+    padding-left: 44px;
+    margin-right: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    border-radius: 10px;
+}
+#list-item-completed{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    height: 80px;
+    margin-bottom: 29px;
+    padding-left: 44px;
+    margin-right: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.to-do li{
+    width: 100%;
+    margin: 0%;
+    padding-left: 14px;
+    
+}
+.taskData{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#name{
+    flex: 2 1 0;
+}
+#day{
+    flex: 2 1 0; 
+}
+#imp{
+    flex: 2 1 0;
+}
+.to-do li button{
+    border: 0;
+    padding: .25rem;
+    
+    place-content: center;
+    background: transparent;
+    flex: 1 1 1;
+    
+    padding-right: 20px;
+}
+.to-do li button svg{
+    width: 20px;
+    height: 20px;
+}
+.to-do li button:active svg {
+    transform: scale(.8);
+}
